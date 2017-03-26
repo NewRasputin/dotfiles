@@ -15,8 +15,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'edkolev/tmuxline.vim'
 Plugin 'raimondi/delimitmate'
-Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
@@ -67,5 +69,7 @@ let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmp='CtrlP'
 let g:ctrlp_working_path_mode='ra'
 let g:NERDTreeShowHidden=1
+let g:airline_powerline_fonts=1
+let g:airline_theme='bubblegum'
 
 autocmd vimenter * NERDTree
