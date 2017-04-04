@@ -67,9 +67,9 @@ let g:delimitMate_expand_cr=1
 let g:delimitMate_expand_space=1
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmp='CtrlP'
+let g:ctrlp_user_command=['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_working_path_mode='ra'
 let g:NERDTreeShowHidden=1
 let g:airline_powerline_fonts=1
 let g:airline_theme='bubblegum'
 
-autocmd vimenter * NERDTree
